@@ -20,7 +20,7 @@
               [{:id "dev"
                 :source-paths ["src"]
                 :figwheel {:open-urls ["http://localhost:3449/index.html"]}
-                :compiler {:main minicosm.demo
+                :compiler {:main {{name}}.main
                            :asset-path "js/compiled/out"
                            :output-to "resources/public/js/compiled/{{name}}.js"
                            :output-dir "resources/public/js/compiled/out"
@@ -34,7 +34,7 @@
                {:id "min"
                 :source-paths ["src"]
                 :compiler {:output-to "resources/public/js/compiled/{{name}}.js"
-                           :main minicosm.core
+                           :main {{name}}.main
                            :optimizations :advanced
                            :pretty-print false}}]}
   :figwheel {:css-dirs ["resources/public/css"]}

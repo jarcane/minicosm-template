@@ -11,7 +11,7 @@
               :sanitized (name-to-path name)}]
     (main/info "Generating fresh 'lein new' minicosm project.")
     (->files data
-             ["src/{{sanitized}}/main.clj" (render "main.clj" data)]
+             ["src/{{sanitized}}/main.cljs" (render "main.cljs" data)]
              ["resources/public/index.html" (render "index.html" data)]
              ["resources/public/css/style.css" (render "style.css" data)]
              ["project.clj" (render "project.clj" data)]
