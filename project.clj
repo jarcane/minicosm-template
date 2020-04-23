@@ -1,4 +1,4 @@
-(defproject minicosm/lein-template "0.1.7"
+(defproject minicosm/lein-template "0.1.8"
   :description "A simple starter template for minicosm projects"
   :url "https://github.com/jarcane/minicosm"
   :license {:name "Eclipse Public License"
